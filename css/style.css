@@ -69,9 +69,10 @@ SECCION HERO/PRESENTACIÓN
 
 }
 .row {
-  display: flex;
-  flex-direction: row-reverse; 
+  display: grid;
   align-items: center; 
+  grid-template-areas: "a . b";
+  grid-auto-columns: 1fr 1fr 1fr;
 }
 
 .hero-img {
@@ -83,7 +84,6 @@ SECCION HERO/PRESENTACIÓN
 .hero-principal {
   text-align: center;
 }
-
 
 
 .container-fluid row {
