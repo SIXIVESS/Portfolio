@@ -68,12 +68,7 @@ SECCION HERO/PRESENTACIÓN
   display: flex;
 
 }
-.row {
-  display: grid;
-  align-items: center; 
-  grid-template-areas: "a . b";
-  grid-auto-columns: 1fr 1fr 1fr;
-}
+
 
 .hero-img {
   width: 100%; 
@@ -86,13 +81,11 @@ SECCION HERO/PRESENTACIÓN
 }
 
 
-.container-fluid row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: space-around;
-  justify-content: space-around;
-  align-items: center;
+.container-fluid .row {
+  display: grid;
+  align-items: center; 
+  grid-template-areas: "a . b";
+  grid-auto-columns: 1fr 1fr 1fr;
 }
 
 h1 {
@@ -216,10 +209,14 @@ EXPERIENCIA
   background-color: var(--fondo);
 }
 
+
+
 .experiencia .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
+  align-items: center; 
+
 }
 
 .experiencia .columna {
